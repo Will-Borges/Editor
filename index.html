@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="meuStyle.css" rel="stylesheet">
+    <script src="meuJs.js"></script>
+</head>
+
+<header class="navbar-fixed-top">
+
+    <div class="divMenu">
+        <!-- <a id="logoMenu" href="index.html">
+            <img src=" images/LOGO-GV.png " width="230px" />
+        </a> -->
+        <h2 class="txtLogo" style="color: #fff;">Editor</h2>
+
+        <nav class="menu">
+
+            <ul>
+                <!-- accept=".jpg, .jpeg, .png" -->
+
+                <input type="file" id="img_input" />
+                <li class="liMenu"><a onclick="aumentarImg()" class="aPadraoMenu fonteMenu ">Aumentar img</a></li>
+                <li class="liMenu"><a onclick="diminuirImg()" class="aPadraoMenu fonteMenu ">Diminuir img</a></li>
+                <li class="liMenu"><input class="inptMenu" type="text" id="novoTexto"></li>
+                <li class="liMenu"><a onclick="criaTexto()" class="aPadraoMenu fonteMenu ">Add Texto</a></li>
+                <li class="liMenu">
+                    <a onclick="esquerdaTexto()" class="aPadraoMenu fonteMenu ">
+                        <</a>
+                </li>
+                <li class="liMenu"><a onclick="direitaTexto()" class="aPadraoMenu fonteMenu ">></a></li>
+                <li class="liMenu"><a onclick="cimaTexto()" class="aPadraoMenu fonteMenu ">^</a></li>
+                <li class="liMenu">
+                    <a onclick="baixoTexto()" class="aPadraoMenu fonteMenu ">b</a>
+                </li>
+                <li class="liMenu">
+                    <a onclick="centerTexto()" class="aPadraoMenu fonteMenu ">Center</a>
+                </li>
+
+
+
+            </ul>
+    </div>
+</header>
+<!-- End header -->
+<br>
+<br><br>
+
+<body>
+
+    <div class="divImg " enctype="multipart/form-data">
+        <!-- <img name="img"> -->
+        <img id="img_preview" src="" alt="Image Preview" />
+        <h1 id="texto" style="color: #fff; display: inline;"></h1>
+    </div>
+
+</body>
+
+
+</html>

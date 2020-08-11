@@ -1,0 +1,169 @@
+ul,
+li,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+
+/*       -----------------  MENU  --------------------                     */
+
+.divMenu {
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    /* Para deixar com um espaço entre eles "space-between"*/
+    font-weight: bold;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* Flex-wrap serve para que quando a tela for pequena os itens fiquem e baixo do logo */
+    background-color: rgba(21, 34, 43, 0.85);
+    height: 73px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.menu {
+    /* margin-right: 7px; */
+    height: 100%;
+}
+
+.fonteMenu {
+    font-size: 15px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.menu ul {
+    /* linha */
+    flex-wrap: wrap;
+    display: flex;
+    margin: 5px;
+    background-color: rgba(21, 34, 43, 0.85);
+    padding: 2px;
+}
+
+.menu li {
+    /* Coluna */
+    margin-left: 0px;
+    color: #f7f7f7;
+}
+
+.aPadraoMenu {
+    display: block;
+    padding: 17px;
+    padding-left: 20px;
+    background-color: rgba(21, 34, 43, 0.85);
+    color: #f7f7f7;
+}
+
+.menu li a {
+    -webkit-transform: 0.7s;
+    -ms-transform: 0.7s;
+    transform: 0.7s;
+    transition: 0.7s;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #FFFFFF;
+    color: rgba(21, 34, 43, 0.85);
+    -webkit-transform: 0.5s;
+    -ms-transform: 0.5s;
+    transform: 0.5s;
+    transition: 0.5s;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+
+/*  ---  Icone Responsivo Mobile ---*/
+
+.iconeMenu {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    visibility: hidden;
+    display: none;
+}
+
+
+/*
+
+    Menu Responsivo mobile */
+
+.divMenuMobile {
+    background-color: rgba(21, 34, 43, 0.85);
+}
+
+header {
+    background-color: rgba(21, 34, 43, 0.85);
+}
+
+label[for="btnMenu"] {
+    padding: 5px;
+    background-color: rgba(21, 34, 43, 0.85);
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: none;
+    /* Coloquei ele aqui para economizar codigo, mas no tutorial ele cria dnv o label[for="btnMenu"] {} */
+    margin: 5px;
+    float: right;
+}
+
+
+/* ------------------------------------- corte img -------------------------------------*/
+
+.corteImg {
+    display: grid;
+    background-color: chartreuse;
+    height: 100%;
+}
+
+
+/* ------------------------------------- carregar img -------------------------------------*/
+
+.divImg {
+    width: 100%;
+    background-color: #000000;
+    height: 900px;
+}
+
+
+/* ------------------------------------- TEXTO ------------------------------------- */
+
+
+/* .texto {
+    position: absolute;
+    
+    color: #fff;
+    text-align: center;
+    top: 90px;
+    width: 50px;
+    line-height: 30px;
+    left: 160px;
+ 
+} */
+
+.inptMenu {
+    margin-top: 11px;
+    padding: 5px;
+    background-color: #f7f7f7;
+    margin-left: 2px;
+    margin-right: 3px;
+}
+
+#img_input {
+    width: 140px;
+    font-weight: 500;
+    margin-top: 15px;
+}
